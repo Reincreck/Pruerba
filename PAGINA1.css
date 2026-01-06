@@ -1,0 +1,736 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*PAGINA 1*/
+
+.container-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%; 
+}
+#logo {
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+}
+#titulo-header {
+    text-align: left; 
+    color: #FFFFFF; 
+    margin-left: 15px;
+}
+.titulo-principal {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+     letter-spacing: 1px;
+}
+header nav{
+    display: flex;       
+    align-items: center;
+    gap: 20px;
+}
+.boton-aula {
+    background-color: #fff;      
+    color: #5a0024;              
+    padding: 8px 18px;
+    border-radius: 25px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    border: 2px solid #fff;
+    display: inline-block; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.boton-aula:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: scale(1.05);    
+}
+header nav ul{
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    font-weight: 400;
+    transition: 0.3s;
+}
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #c893a5;
+    transition: all 0.3s ease;
+}
+header nav a:hover::after {
+    width: 60%;
+    left: 20%;
+}
+header nav ul li{
+    float: left;
+}
+.subtitulo-universidad {
+    color: #fff;
+    font-size: 1em; 
+    margin: 0;
+    font-weight: 300;
+    opacity: 0.9;
+}
+#facultadimagen a{
+    border-radius: 10%;
+    background-color: #5a0024;
+   width: 150px;
+   height: auto;
+}
+header{
+   width: 100%;
+    height: auto; 
+    background: linear-gradient(135deg, #5a0024 0%, #7a0031 100%); 
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+a{
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+#logoobstetricia{
+    width: 100px;
+    height: 100px;
+    margin-top: -7px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2)); 
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6 ;
+    background-color: #fdfdfd;
+}
+#facultadimagen {
+     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://i.imgur.com/v9ld7MX.jpeg);
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; /* Parallax */
+    height: 600px;                
+    display: flex;                
+    flex-direction: column;       
+    align-items: center;         
+    justify-content: center;      
+    text-align: center;           
+    padding: 0 20px;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);     
+}
+#bannerinferior {
+    margin: 80px 0;
+    background: linear-gradient(45deg, #5a0024, #7a0031);
+    color: #fff;
+    text-align: center;
+    padding: 60px 15%;
+    border-radius: 0; 
+    position: relative;
+}
+#bannerinferior h2 {
+    margin-bottom: 15px; 
+    font-size: 2rem;
+    color: #fff;         
+}
+
+#bannerinferior p {
+    margin: 0;           
+    font-size: 1.2rem;
+    line-height: 1.6;    
+}
+#autoridades, #plandeestudios, #redessociales {
+     margin-top: 60px;
+    border-radius: 20px; 
+    background: linear-gradient(145deg, #c893a5, #b88395);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+#autoridades:hover, #plandeestudios:hover, #redessociales:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(90, 0, 36, 0.2);
+    background: #c893a5;
+}
+.cajasinicio {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 40px auto; 
+}
+.cajasinicio section {
+    flex-basis: 33.33%; 
+    flex-grow: 1; 
+    flex-shrink: 1;
+}
+header h1 {
+    font-weight: 300; 
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 1400px; 
+    margin: 0 auto;    
+    padding: 0 15px;  
+}
+
+h2 {
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.piedepaginacontenedor {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 15px; 
+    gap: 60px; 
+}
+footer p {
+    text-align: left;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline; 
+}
+.logopie {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+
+footer section {
+    flex: 1; 
+    padding: 0; 
+}
+#piedepagina h2 {
+    font-size: 1.2rem;
+    margin: 0; 
+    text-align: left;
+}
+
+#piedepagina p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+#logofooter {
+    width: 60px; 
+    height: auto;
+}
+#siguenos .facebook {
+    display: flex;         
+    flex-direction: row;   
+    align-items: center;   
+    gap: 15px;             
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;    
+}
+
+#siguenos .facebookimg {
+    width: 35px;          
+    height: auto;
+    display: block;     
+}
+#siguenos h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+footer {
+     background-color: #3d0018; 
+    color: white;
+    padding: 60px 0; 
+    width: 100%;
+    border-top: 5px solid #c893a5;
+}
+
+/* PAGINA 2*/
+
+.contenedor-facultad {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila-mision-vision {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+}
+#mision2, #vision2{
+   background: linear-gradient(145deg, #c893a5, #b88395);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+#resenas2 {
+   background: linear-gradient(145deg, #c893a5, #b88395);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+#mision2:hover, #vision2:hover {
+    transform: scale(1.02);
+}
+#resenas2:hover {
+    transform: scale(1.02);
+}
+#mision2 h2, #vision2 h2, #resenas2 h2,
+#mision2 p, #vision2 p, #resenas2 p {
+    color: white;
+}
+#imagenes2 {
+    width: 100%;
+    display: flex;          
+    justify-content: center; 
+    margin-top: 30px;       
+    margin-bottom: 20px;    
+}
+
+#imagenes2 img {
+    max-width: 90%;         
+    height: auto;           
+    border-radius: 15px;   
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+.link-cv {
+    text-decoration: none; 
+    color: #5a0024;       
+    transition: 0.3s;
+}
+
+.link-cv:hover {
+    color: #c893a5;      
+    text-decoration: underline; 
+}
+#autoridades2 {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion-autoridades {
+    text-align: center;
+    color: #5a0024; 
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.tarjeta-autoridad {
+    display: flex;       
+    align-items: center; 
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border-left: 5px solid transparent;
+}
+.tarjeta-autoridad:hover {
+    background-color: #fff;
+    border-left: 5px solid #5a0024;
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.foto-autoridad img {
+    width: 150px;         
+    height: 150px;
+    border-radius: 50%;    
+    object-fit: cover;     
+    margin-right: 30px;  
+    border: 3px solid #c893a5;
+}
+
+.info-autoridad h3 {
+    color: #5a0024;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    font-weight: bold;
+    color: #c893a5;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.descripcion {
+    color: #555;
+    line-height: 1.5;
+}
+/* PAGINA 3 */
+
+#imagenes-carrera {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#imagenes-carrera img {
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#perfil-carrera {
+    background-color: #c893a5;
+    color: white;
+    padding: 35px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ESTILO DE CUADROS DESPLEGABLES */
+.malla-curricular {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.ciclo-desplegable {
+    background-color: #5a0024; 
+    border: none;          
+    border-radius: 12px;
+    transition: 0.3s;
+    margin-bottom: 10px;  
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
+    overflow: hidden;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+#practicas-convenios:hover {
+    transform: scale(1.02);
+}
+.ciclo-desplegable summary {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 18px 25px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;            
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+#investigacion-carrera:hover {
+    transform: scale(1.02);
+}
+#egresado:hover {
+    transform: scale(1.02);
+}
+#ingresante:hover {
+    transform: scale(1.02);
+}
+.ciclo-desplegable summary:hover {
+   background-color: #7a0031; 
+}
+
+.contenido-ciclo {
+    padding: 20px 40px;
+    background-color: #fff;  
+    color: #333;
+}
+
+.contenido-ciclo ul li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.ciclo-desplegable[open] summary {
+    
+   background-color: #5a0024; 
+    border-bottom: 1px solid rgba(255,255,255,0.2); 
+}
+.fila-perfiles {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cuadro-perfil {
+    background: linear-gradient(145deg, #c893a5, #b88395);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    flex: 1;
+    background-color: #c893a5;
+    color: white;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.cuadro-perfil p {
+    line-height: 1.6;    
+    text-align: justify; 
+    font-size: 0.95rem;  
+    margin-top: 15px;
+}
+#investigacion-carrera, #practicas-convenios {
+    background-color: #c893a5;
+    color: white;
+    padding: 40px 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+#practicas-convenios {
+    background-color: #c893a5;
+    color: white;
+    padding: 40px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 10px; 
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+#practicas-convenios ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#practicas-convenios li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+#investigacion-carrera p {
+    line-height: 1.7;   
+    text-align: justify; 
+    max-width: 900px;   
+    margin: 0 auto;     
+}
+/*PAGINA 4*/
+
+.contacto {
+    font-family: 'Arial', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #000;
+}
+.contacto h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 60px;
+}
+.titulo-icono, 
+.ubicacion-title {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    grid-column: 1; 
+}
+.ubicacion-title {
+    grid-column: 1 / -1; 
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.item img {
+    width: 45px; 
+    height: auto;
+    margin-right: 20px;
+    filter:saturate(5) hue-rotate(300deg); 
+    transition: 0.3s;
+}
+.item:hover img {
+    transform: rotate(-10deg) scale(1.1);
+}
+.item h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    margin: 0;
+}
+.redes {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.redes p {
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.facebookimg {
+    width: 60px; 
+    transition: transform 0.3s ease;
+}
+
+.facebookimg:hover {
+    transform: scale(1.1);
+}
+iframe {
+    border: 10px solid white;
+    filter: grayscale(0.2);
+    transition: 0.5s;
+    grid-column: 1 / -1; 
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
+}
+iframe:hover {
+    filter: grayscale(0);
+}
+
+/* =========================
+   RESPONSIVE – CELULARES
+   ========================= */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .container-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul li {
+        float: none;
+    }
+
+    #logo {
+        flex-direction: column;
+    }
+
+    #logoobstetricia {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* SECCIONES GENERALES */
+    .cajasinicio,
+    .fila-mision-vision,
+    .fila-perfiles {
+        flex-direction: column;
+    }
+
+    /* PÁGINA 4 – CONTACTO */
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .titulo-icono {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .item {
+        align-items: center;
+        text-align: left;
+    }
+
+    .item img {
+        width: 40px;
+    }
+
+    iframe {
+        height: 280px;
+    }
+
+    /* FOOTER */
+    .piedepaginacontenedor {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer p,
+    footer ul,
+    #piedepagina h2 {
+        text-align: center;
+    }
+
+    #siguenos .facebook {
+        justify-content: center;
+    }
+}
